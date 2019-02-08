@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
+
+    <title>Juvo</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+    
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/wow.min.js"></script>
+        <script>
+         new WOW(
+            ).init();
+        </script>
+
+</head>
+<style>
+.navbar {
+     height: 80px;
+     background-color: transparent;
+     border: none;
+     color: white;
+     z-index: 100;
+     transition: all 1s ease-out;
+}
+    .navbar-light .navbar-toggle {
+  border-color: rgba(0, 0, 0, 0);
+}
+    .touch li a:after {
+  display: none;
+}
+.navbar-brand {
+    text-align: left;
+
+}
+.navbar-brand img {
+    width: 15%;
+    height: auto;
+
+}
+.navbar-brand img:hover {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+}
+@-moz-keyframes spin {
+    0% {width: 15%; opacity: 1;}
+    50% {width: 40%; opacity: 0;}
+    100% {width: 25%; opacity: 1;}
+}
+@-webkit-keyframes spin {
+    0% {width: 15%; opacity: 1;}
+    50% {width: 40%; opacity: 0;}
+    100% {width: 25%; opacity: 1;}
+}
+@keyframes spin {
+    0% {width: 15%; opacity: 1;}
+    50% {width: 40%; opacity: 0;}
+    100% {width: 25%; opacity: 1;}
+}
+    .navbar-light {
+  background-color: transparent;
+  border-top: 0px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 0px solid rgba(0, 0, 0, 0.5);
+  border-left: 0px solid rgba(0, 0, 0, 0.5);
+  border-right: 0px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color .8s ease-out;
+}
+
+.navbar.navbar-light .overlay-content {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar-nav>li {
+
+  padding-left: 14px;
+  padding-right: 14px;
+  height: 45px;
+}
+
+.navbar-nav {
+  padding-top: 20px;
+}
+
+.navbar-nav>li:last-child {
+  border: none;
+}
+
+.navbar-light .navbar-toggle {
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-light .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-toggle {
+  margin-top: 19px;
+  margin-right: 43px;
+}
+@media (hover: none) {
+  li a:after {
+    display: none;
+  }
+}
+.navbar-light .navbar-nav>.active>a {
+  color: #fff;
+  background-color: rgba(255, 198, 0, 0);
+  transition: .3s all ease-in-out;
+}
+
+.navbar-light .navbar-nav>.active>a:hover {
+    color: #2D7DD2;
+    font-weight: bolder;
+    font-size: 24px;
+    transition: .2s all ease-in-out;
+}
+
+/*
+.navbar-default .navbar-nav > li > a:before { 
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-default .navbar-nav > li > a:focus:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+*/
+.navbar-light .navbar-nav>li>a:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+.navbar-light .navbar-toggle .icon-bar {
+  background-color: #fff;
+  color: #fff;
+}
+
+.navbar-toggle {
+  margin-top: 19px;
+  margin-right: 43px;
+}
+.overlay-content {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  
+  }
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255,179,15);
+    background-color: rgba(255,179,15, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #141115;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #fff;
+    font-size: 40px;
+
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 60px;
+}
+.overlay .closebtn:hover {
+    font-size: 80px;
+    transition: 0.3s;
+}
+@media only screen and (max-width: 991px) {
+   
+}
+
+.nav-icon{
+     font-size:30px;
+     cursor:pointer;
+     display: block;
+     text-align: right;
+}
+
+
+
+  .navbar-header {
+    float: none;
+  }
+ 
+  .navbar-toggle {
+    display: block;
+  }
+   .overlay-content {
+        float: none!important;
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px !important;
+  }
+    .modal-nav-content {
+    width: 100%;
+    height: auto;
+  }
+  .modal-nav-body {
+    margin-top: 100px;
+  }
+  .modal-nav-body ul {
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .modal-nav-body ul li {
+    text-align: center;
+    font-size: 130%;
+    padding: 8px;
+    text-transform: uppercase;
+  }
+   .navbar.solid {
+     background-color: #212529;
+     box-shadow: 0 0 4px grey;
+    transition: all 1s ease;
+}
+ .navbar.solid .navbar-brand {
+     width: 0px;
+     height: 0px;
+     visibility: hidden;
+     transition: all 0.7s ease 0s;
+}
+.navbar.solid .navbar-right {
+    margin-left: 0;
+}
+ .navbar.solid .navbar-nav .letters {
+    color: #fff;
+    transition: all 1s ease 0s;
+
+}
+.navbar.solid .navbar-nav .letters:hover {
+    color: #212529;
+  -webkit-transition: color 200ms linear;
+  -moz-transition: color 200ms linear;
+  -o-transition: color 200ms linear;
+  -ms-transition: color 200ms linear;
+  transition: color 200ms linear;
+}
+
+#mc_embed_signup{
+    position: relative;
+    text-align: center;
+    background:#2D7DD2; 
+    clear:left; 
+    font-size: 18px;
+    font: #212529; 
+    width:100%;
+}
+#mc-embedded-subscribe {
+    background-color: #FFC600;
+    color: #FF0202;
+    padding: 20px;
+    border-radius: 15px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+#mc_embed_signup input {
+    background-color: #2D7DD2;
+    color: #fff;
+    border: #fff;
+}
+</style>
+
+ <body data-spy="scroll" data-target=".navbar" data-offset="80">
+
+                    <!--<div id="loader-wrapper">
+                        <div id="loader"></div>
+                        <div class="loader-section section-left"></div>
+                        <div class="loader-section section-right"></div>
+                    </div>-->
+
+
+<nav class="navbar fixed-top navbar-light navbar-light">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+       
+      <a class="navbar-brand" href="#"><img src="images/Juvo-logo.png"></a>
+    </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#wrapper">Home</a></li>
+            <li><a href="#s1">App</a></li>
+            <li><a href="#s2">Product</a></li>
+            <li><a href="#s3">Pages</a></li>
+            <li><a href="#s4">Features</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="overlay" id="myNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <ul class="nav navbar-nav overlay-content" id="myNavbar">
+
+                <h5 class="ml14">
+                  <span class="text-wrapper">
+                    <span class="letters">
+                        <li><a href="index.html">Home</a></li>
+                    </span>
+                    <span class="line"></span>
+                </span>
+            </h5>
+                <h5 class="ml14">
+                  <span class="text-wrapper">
+                    <span class="letters">
+                        <li><a href="portfolio.html">About</a></li>
+                    </span>
+                    <span class="line"></span>
+                </span>
+            </h5>
+                <h5 class="ml14">
+                  <span class="text-wrapper">
+                    <span class="letters">
+                        <li><a href="music.html">Product</a></li>
+                    </span>
+                    <span class="line"></span>
+                </span>
+            </h5>
+                <h5 class="ml14">
+                  <span class="text-wrapper">
+                    <span class="letters">
+                        <li><a href="references.html"></a>Our Team</li>
+                    </span>
+                    <span class="line"></span>
+                </span>
+            </h5>
+                <h5 class="ml14">
+                  <span class="text-wrapper">
+                    <span class="letters">
+                        <li><a href="skills.html">Blog</a></li>
+                    </span>
+                    <span class="line"></span>
+                  </span>
+                </h5>
+
+                
+            </ul>
+
+        </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      
+      <ul class="nav navbar-nav ml-auto">
+        <span class="nav-icon" onclick="openNav()">&#9776;</span>
+          
+            
+      </ul><!-- /.navbar-collapse -->
+        
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-nav-content">
+      <div class="modal-nav-body">
+        <ul>
+          <li>Brand</li>
+          <li>About Me</li>
+          <li>Game</li>
+          <li>Hobbies</li>
+          <li>Contact Me</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div id="wrapper">
+
+
+        <!-- Sidebar Holder -->
+        
+
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+
+
+            
+                <div class="container-fluid">
+
+                    
+                    
+                    <div class="motto">
+                        <h3></h3>
+                    </div>
+                    <div class="logos">
+                        
+
+                    </div>
+                </div>
+
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"9bc16de0ae1f22620f48e85e4","lid":"0d2eab1790","uniqueMethods":true}) })</script>
+  
+          
+<section id="content1">
+    <div class="container-fluid text">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <!--<h2 class="ml5 wow fadeInUp" data-wow-delay=".8s">
+                  <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters letters-left">We</span>
+                    <span class="letters ampersand">are</span>
+                    <span class="letters letters-right">Juvo</span>
+                    <span class="line line2"></span>
+                  </span>
+                </h2>-->
+        
+            
+            <!--<h3 class="ml11 wow fadeInUp" data-wow-delay=".8s">
+              <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">Juvo is an app that specializes in personalizing health data for you</span>
+              </span>
+            </h3>-->
+
+            
+        <!--<div class="b">
+            <a href="" id="cta" class="btn btn-default btn-white readmore-btn wow fadeInUp" role="button" data-wow-delay=".8s">More Info</a>
+        </div>-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 header1">
+                         <div class="heading1">
+
+
+        <div class="categoryWrapper">
+        <h3>Get the results you DESERVE</h3>
+        <button>
+            <span>
+                <span>
+                    <span data-attr-span="Sign up now">
+                        Sign up now
+                    </span>
+                </span>
+            </span>
+        </button>
+    </div>    
+    <!--
+            <h3>Get the results you DESERVE</h3>
+            <div class="b">
+            <a href="" id="cta" class="btn btn-default btn-white readmore-btn wow fadeInUp" role="button" data-wow-delay=".8s">Sign up now</a>
+            </div>
+    -->
+            </div> 
+                </div>
+                <div class="col-md-8">
+
+                    <div class="wire-hero">
+
+            <img src="images/02.png">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+           
+            </div>
+        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+         
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+                <polygon points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>-->
+
+                
+                
+        </div>
+    </div>
+
+
+
+</section>
+
+           
+        </div>
+    </div>
+
+
+<section id="between">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <h4>Health data personalized just for you</h4>
+            </div>
+            <div class="col-md-12 col-sm-12 text-center">
+                <div class="spinner">
+                  <div class="dot1"></div>
+                  <div class="dot2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bgfbox" id="s1">
+    <div class="container-fluid">
+        <div class="row flex-row">
+            <div class="col-md-6">
+                <div class="bgfbox-content bg-2 bg-hover-inverse wow fadeInUp" data-wow-delay=".4s">
+                    <div class="bgfbox-icon-wrap">
+                        <span class="text-primary" aria-hidden="true"></span>
+                    </div>
+                    <img src="images/Ring2.jpg">
+                
+            </div>
+        </div>
+
+            
+        <div class="col-md-6">
+            <div class="bgfbox-content bg-1 bg-hover-inverse bg-hover-fade">
+                    <div class="bgfbox-icon-wrap">
+                        <span class="text-primary" aria-hidden="true"></span>
+                    </div>
+                <div class="bgfbox-text-wrap">
+                <h2>The App</h2>
+                <p><li>From the homepage you will be able to access friends, classes and healthy suggestions based on your data. Using this data we are able to specifically target suggestions that will help you get the best possible type of workout.</li></p>
+                <p><li>We use API's from your fitbit and Apple's sensors to gather detailed data of what you are doing during workouts to make sure that our suggestions are specfic and perfectly on target.</li></p>
+                
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="between">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <h4>Personalized suggestions for your next workout</h4>
+            </div>
+            <div class="col-md-12 col-sm-12 text-center">
+                <div class="spinner">
+                  <div class="dot1"></div>
+                  <div class="dot2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bgfbox" id="s2">
+    <div class="container-fluid">
+        <div class="row flex-row">
+            <div class="col-md-6">
+                <div class="bgfbox-content bg-3 bg-hover-inverse bg-hover-fade wow fadeInUp" data-wow-delay=".4s">
+                    <div class="bgfbox-icon-wrap">
+                        <span class="text-primary" aria-hidden="true"></span>
+                    </div>
+                    <img src="images/Clay Light.png">
+                
+            </div>
+        </div>
+
+            
+        <div class="col-md-6">
+            <div class="bgfbox-content bg-4 bg-hover-inverse bg-hover-fade">
+                    <div class="bgfbox-icon-wrap">
+                        <span class="text-primary" aria-hidden="true"></span>
+                    </div>
+                <div class="bgfbox-text-wrap">
+                <h2>The Interface</h2>
+                <p><li>With our beautifully designed mobile and desktop app, ease of use is a top priority for us. We never want you to worry about finding or trying to decode the data that is coming in.</li></p>
+                
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="between">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <h4>Personalized suggestions for your next workout</h4>
+            </div>
+            <div class="col-md-12 col-sm-12 text-center">
+                <div class="spinner">
+                  <div class="dot1"></div>
+                  <div class="dot2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="split" id="s3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="top wow fadeInUp" data-wow-delay=".2s">
+
+                    <div class="top1">
+                        <div class="head-wrap1">
+                           <h3 class="heading-top">Features</h3>
+                           <p>Smart analytics will take from your studio experiences and show you the best way to improve</p>
+                           <p><a href="#s4"><button class="btn btn-large">Features</button></a></p>
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="bottom">
+                    <div class="bottom1">
+                        <div class="bottom2 wow fadeInUp" data-wow-delay=".3s">
+                            <div class="bottom2-1">
+                        <div class="head-wrap2">
+                           <h3 class="heading-bottom">Mission</h3>
+                           <p>Our mission is to make sure the time you spend is the most efficent and satisying every week</p>
+                           <p><a href="#s5"><button class="btn btn-large">Mission</button></a></p> 
+                        </div>
+                            </div>
+                        </div>
+                        <div class="bottom3 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="bottom3-1">
+                            <div class="head-wrap2">
+                           <h3 class="heading-bottom">Our Team</h3>
+                           <p>Our specifically assembled team has been put together so we can give you something the market does not have available</p>
+                           <p><a href="#s6"><button class="btn btn-large">Team</button></a></p> 
+                        </div>
+                            </div>
+                            </div>
+
+                    </div>
+
+                    
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+                <div class="right wow fadeInUp" data-wow-delay=".5s">
+                    <div class="right1">
+                        <div class="head-wrap1">
+                           <h3 class="heading-top">App</h3>
+                           <p>Our interface is easy to use and ensures that you will get the most out of your workout</p>
+                           <p><a href="app.html"><button class="btn btn-large">App</button></a></p>
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="between">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <h4>And more</h4>
+            </div>
+            <div class="col-md-12 col-sm-12 text-center">
+                <div class="spinner">
+                  <div class="dot1"></div>
+                  <div class="dot2"></div>
+                </div>
+            </div>
+                        <!-- Begin Mailchimp Signup Form -->
+        </div>
+    </div>
+</section>
+<section class="blue">
+</section>
+
+<section class="features" id="s4">
+    <div class="container">
+        <div class="row">
+            <div class="f-1 col-md-3 wow fadeInDown" data-wow-delay=".2s" onmouseover="document.getElementById('f1').style.display = 'block';" onmouseout="document.getElementById('f1').style.display = 'none';">
+                <div class="icon-wrap">
+                    <i class="fas fa-database fa-5x"></i>
+                </div>
+                <div class="text-wrap">
+                    <h4>Smart Data</h4>
+                    <p>Data used with reason</p>
+                </div>
+
+            </div>
+            <div class="col-md-3 wow fadeInDown" data-wow-delay=".3s" onmouseover="document.getElementById('f2').style.display = 'block';" onmouseout="document.getElementById('f2').style.display = 'none';">
+                <div class="icon-wrap">
+                    <i class="fas fa-user-circle fa-5x"></i>
+                </div>
+                <div class="text-wrap">
+                    <h4>Personalized</h4>
+                    <p>Suggestions based on exactly what you do</p>
+                </div>
+
+            </div>
+            <div class="col-md-3 wow fadeInDown" data-wow-delay=".4s" onmouseover="document.getElementById('f3').style.display = 'block';" onmouseout="document.getElementById('f3').style.display = 'none';">
+                <div class="icon-wrap">
+                    <i class="fas fa-user-friends fa-5x"></i>
+                </div>
+                <div class="text-wrap">
+                    <h4>Social</h4>
+                    <p>See how your friends are doing</p>
+                </div>
+
+            </div>
+            <div class="col-md-3 wow fadeInDown" data-wow-delay=".5s" onmouseover="document.getElementById('f4').style.display = 'block';" onmouseout="document.getElementById('f4').style.display = 'none';">
+                <div class="icon-wrap">
+                    <i class="fas fa-dumbbell fa-5x"></i>
+                </div>
+                <div class="text-wrap">
+                    <h4>Local Gyms</h4>
+                    <p>Sync to all the gyms around you</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="popup" id="f1">
+    <div class="container feat1">
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-8">
+                <h4>Smart Data</h4>
+                <p>All data collected is compiled and used methodically to keep you going</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="popup" id="f2">
+    <div class="container feat1">
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-8">
+                <h4>Personalized</h4>
+                <p>Our aggregrated data is molded into personalizations specifically for you</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="popup" id="f3">
+    <div class="container feat1">
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-8">
+                <h4>Social</h4>
+                <p>Check up on your friends and even compete with them weekly or monthly</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="popup" id="f4">
+    <div class="container feat1">
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-8">
+                <h4>Local Gyms</h4>
+                <p>We will be the centralized source for all of your local gyms and a way for them to be connected</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mission" id="s5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+
+        <div class="col-md-8">
+            <div class="mission-text">
+            <h2>Our Mission</h2>
+            <h4>is to help users become healthier and more active in their lifestyle</h4>
+            <p>This involves giving them smart suggestions and analytics to increase efficiency and allowing them to experience new types of workouts that they may have never experienced</p>
+            </div>
+        </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blue">
+</section>
+
+<section class="features" id="s6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 wow fadeInDown" data-wow-delay=".2s">
+                <div class="icon-wrap">
+                   <i class="fas fa-user-tie fa-5x"></i>
+                </div>
+                <div class="text-wrap">
+                    <h4>Kingsley Mcgowan</h4>
+                    <p>CEO</p>
+                </div>
+
+            </div>
+            <div class="col-md-3 wow fadeInDown" data-wow-delay=".3s">
+                <div class="icon-wrap">
+                    <i class="fas fa-user-tie fa-5x"></i>
+                </div>
+                <div class="text-wrap">
+                    <h4>Devon Gerber</h4>
+                    <p>Technology/Design/Product Management</p>
+                </div>
+
+            </div>
+            <div class="col-md-3 wow fadeInDown" data-wow-delay=".4s">
+                <div class="icon-wrap">
+                    <i class="fas fa-user-tie fa-5x"></i>
+                </div>
+                <div class="text-wrap">
+                    <h4>Emmeline Vu</h4>
+                    <p>Marketing/Communications</p>
+                </div>
+
+            </div>
+            <div class="col-md-3 wow fadeInDown" data-wow-delay=".5s">
+                <div class="icon-wrap">
+                    <i class="fas fa-user-tie fa-5x"></i>
+                </div>
+                <div class="text-wrap">
+                    <h4>Jason Imola</h4>
+                    <p>Business/Strategy</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="between2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="mc_embed_signup">
+                <form action="https://juvo.us19.list-manage.com/subscribe/post?u=9bc16de0ae1f22620f48e85e4&amp;id=0d2eab1790" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL">Subscribe to our mailing list</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk from bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9bc16de0ae1f22620f48e85e4_0d2eab1790" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>          
+
+
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+
+    $(".img1").hover(function() {
+        $(this).animate({opacity: 1.0}, 500);
+    }, function() {
+        $(this).animate({opacity: 0.2}, 500);
+    });
+    });
+
+    </script>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+          <p>This will be the footer and the end of the site.</p>
+          <br>
+          <br>
+          <p>I guess we will decide later what will be down here.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <a href="#!">PROJECTS</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#!">ABOUT US</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#!">BLOG</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#!">AWARDS</a>
+              </p>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+          <!-- Contact details -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-envelope mr-3"></i> info@example.com</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+          <!-- Social buttons -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+          <!-- Facebook -->
+          <a type="button" class="btn-floating btn-fb">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <!-- Twitter -->
+          <a type="button" class="btn-floating btn-tw">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <!-- Google +-->
+          <a type="button" class="btn-floating btn-gplus">
+            <i class="fa fa-google-plus"></i>
+          </a>
+          <!-- Dribbble -->
+          <a type="button" class="btn-floating btn-dribbble">
+            <i class="fa fa-dribbble"></i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="">Juvo</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+      }
+</script>
+
+
+</body>
+
+</html>
